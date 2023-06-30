@@ -1,0 +1,1 @@
+PHP_NEW_EXTENSION(pathfinding, pathfinding.c, $ext_shared)
