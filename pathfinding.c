@@ -1,9 +1,9 @@
 #include "php.h"
 
-PHP_FUNCTION(test);
+PHP_FUNCTION(pftest);
 
 const zend_function_entry pathfinding_functions[] = {
-	PHP_FE(test, NULL)
+	PHP_FE(pftest, NULL)
 	{NULL, NULL, NULL}
 };
 
@@ -22,7 +22,7 @@ zend_module_entry pathfinding_module_entry = {
 
 ZEND_GET_MODULE(pathfinding)
 
-PHP_FUNCTION(test)
+PHP_FUNCTION(pftest)
 {
 	RETURN_STRING("Hello from cs 3", 1);
 }
